@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="form">
+        <h2>Signup form</h2>
+        <form action="">
+            <div class="error-text">Error</div>
+            <div class="grid-details">
+                <div class="input">
+                    <label>First Name</label>
+                    <input type="text" name="fname" placeholder="First Name" required pattern="[a-zA-Z'-'\s]">
+                </div>
+                <div class="input">
+                    <label>Last Name</label>
+                    <input type="text" name="lname" placeholder="Last Name" required pattern="[a-zA-Z'-'\s]">
+                </div>
+            </div>
+            <div class="input">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="input">
+                <label>Phone</label>
+                <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{11}" required oninvalid="this.setCustomValidity('Enter 11 digit number')" oninput="this.setCustomValidity('')">
+            </div>
+            <div class="grid-details">
+                <div class="input">
+                    <label>Password</label>
+                    <input type="password" name="pass" placeholder="Password" required">
+                </div>
+                <div class="input">
+                    <label>Confirm Password</label>
+                    <input type="password" name="cpass" placeholder="Confirm Password" required">
+                </div>
+            </div>
+            <div class="profile-img">
+                <div class="file-upload">
+                    <input type="file" id="image-preview" name="image" class="file-input" required oninvalid="this.setCustomValidity('Select a Profile Picture')" oninput="this.setCustomValidity('')">
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Signup Now" class="button">
+            </div>
+        </form>
+        <div class="link">Already Signed up? <a href="">Login Now</a></div>
+    </div>
+</body>
+</html>
