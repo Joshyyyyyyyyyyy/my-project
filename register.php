@@ -9,16 +9,16 @@
 <body>
     <div class="form">
         <h2>Signup form</h2>
-        <form action="">
+        <form action="signup.php" method="POST" enctype="multipart/form-data">
             <div class="error-text">Error</div>
             <div class="grid-details">
                 <div class="input">
                     <label>First Name</label>
-                    <input type="text" name="fname" placeholder="First Name" required pattern="[a-zA-Z'-'\s]">
+                    <input type="text" name="fname" placeholder="First Name" required>
                 </div>
                 <div class="input">
                     <label>Last Name</label>
-                    <input type="text" name="lname" placeholder="Last Name" required pattern="[a-zA-Z'-'\s]">
+                    <input type="text" name="lname" placeholder="Last Name" required>
                 </div>
             </div>
             <div class="input">
@@ -56,5 +56,6 @@
         </form>
         <div class="link">Already Signed up? <a href="">Login Now</a></div>
     </div>
+    <script src="js/register.js"></script>
 </body>
 </html>
